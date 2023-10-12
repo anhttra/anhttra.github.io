@@ -66,7 +66,7 @@ hr {
 
 @media (min-width: 1020px) {
   .timecard-container {
-    width: 1000px;
+    max-width: 980px;
   }
 }
 

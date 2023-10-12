@@ -75,6 +75,7 @@ const props = defineProps({
     padding-left: 20px;
     padding-bottom: 20px;
     text-align: justify;
+    hyphens: auto;
 }
 
 @media (max-width: 600px) {
