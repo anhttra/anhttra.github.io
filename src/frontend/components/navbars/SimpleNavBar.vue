@@ -61,4 +61,18 @@ import { RouterLink, RouterView } from 'vue-router'
   color: rgb(11, 45, 10);
 }
 
+@media (max-width: 400px) {
+  .navbar-right {
+    gap: 1rem;
+  }
+  .navbar-right--item {
+    font-size: 1rem;
+  }
+
+  .img-logo {
+    max-width: 100px;
+  }
+
+
+}
 </style>
