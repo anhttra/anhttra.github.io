@@ -64,7 +64,7 @@ hr {
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1020px) {
   .timecard-container {
     width: 1000px;
   }
