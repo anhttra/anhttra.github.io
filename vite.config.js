@@ -12,5 +12,8 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src/frontend', import.meta.url)),
     }
+  },
+  build: {
+    outDir: './docs'
   }
 })
