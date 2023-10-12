@@ -1,6 +1,12 @@
-@import './base.css';
+/* @import './base.css'; */
+@import './normalization.css';
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Source+Code+Pro&display=swap');
 
-#app {
+a, a:active, a:focus {
+  outline: none;
+}
+
+/* #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -32,4 +38,4 @@ a,
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
-}
+} */
