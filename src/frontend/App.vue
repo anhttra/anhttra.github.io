@@ -2,11 +2,13 @@
 import { RouterView } from 'vue-router'
 import SimpleNavBar from './components/navbars/SimpleNavBar.vue'
 import SimpleFooter from './components/footers/SimpleFooter.vue'
+import SimpleBanner from './components/banners/SimpleBanner.vue'
 </script>
 
 <template>
   <header>
     <simple-nav-bar></simple-nav-bar>
+    <simple-banner></simple-banner>
   </header>
 
   <div class="routerview-container">

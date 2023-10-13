@@ -67,12 +67,13 @@ hr {
 @media (min-width: 1020px) {
   .timecard-container {
     max-width: 980px;
+    margin: 16px auto;
   }
 }
 
 .timecard-container {
   max-width: 1020px;
-  margin: 2rem auto;
+  margin: 32px auto;
   padding-left: 15px;
   padding-right: 15px;
 }
