@@ -1,0 +1,2 @@
+CONTAINER ID   IMAGE             COMMAND   CREATED       STATUS       PORTS                              NAMES
+5dc698e65ad5   jlesage/firefox   "/init"   2 hours ago   Up 2 hours   0.0.0.0:5800->5800/tcp, 5900/tcp   firefox
