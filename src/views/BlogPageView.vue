@@ -34,11 +34,9 @@ const publicDate = computed(() => dayjs(post.published_at).format('MMMM DD, YYYY
                 </section>
                 <h1 class="blog-page-title">{{ post.title }}</h1>
             </header>
-            <figure class="blog-page-image">
-                <picture>
-                    <img :src="post.feature_image" :alt="post.feature_image_alt" width="2000" height="1000">
-                </picture>
-            </figure>
+            <div class="blog-page-image">
+                <img :src="post.feature_image" :alt="post.feature_image_alt" width="2000" height="1000">
+            </div>
             <section class="blog-page-content">
                 <div v-html="post.html" class="markdown-body"></div>
             </section>
@@ -49,9 +47,7 @@ const publicDate = computed(() => dayjs(post.published_at).format('MMMM DD, YYYY
 <style scoped>
 /* @import url('https://fonts.googleapis.com/css2?family=Lato&family=Orbitron:wght@900&family=Source+Code+Pro&display=swap'); */
 .blog-page-container {
-    margin: 0 auto;
     max-width: 1060px;
-    width: 100%;
     margin: 40px 100px;
     font-family: Lato, sans-serif; 
     font-size: 18px; 
@@ -61,6 +57,7 @@ const publicDate = computed(() => dayjs(post.published_at).format('MMMM DD, YYYY
     position: relative;
     z-index: 50;
     text-align: justify;
+    width: 100%;
 }
 .blog-page-header {
     padding: 0 0 3vw;
@@ -91,25 +88,19 @@ const publicDate = computed(() => dayjs(post.published_at).format('MMMM DD, YYYY
     font-weight: 600;
     margin: 20px auto;
 }
-.blog-page-image {
-    overflow: hidden;
-}
 .blog-page-image img {
-    height: auto;
-    width: 100%;
     max-height: 800px;
-    max-width: 920px;
+    width: 100%;
     object-fit: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    
 }
 .blog-page-content {
     position: relative;
-    /* margin: 0 auto; */
     margin-top: 60px;
-    max-width: 800px;
-    width: 90%;
-    /* padding: 60px 150px 0 0; */
-    /* margin-bottom: 40px; */
-    min-height: 230px;
+    padding-right: 200px;
     font-family: Lato,sans-serif;
     font-display: swap;
     font-size: 1.3rem;
@@ -119,6 +110,7 @@ const publicDate = computed(() => dayjs(post.published_at).format('MMMM DD, YYYY
 @media (max-width: 1200px) {
     .blog-page-container {
         margin: 40px 60px;
+        max-width: calc(100% - 60px);
     }
     .blog-page-header {
         max-width: 90%;
@@ -126,14 +118,20 @@ const publicDate = computed(() => dayjs(post.published_at).format('MMMM DD, YYYY
     .blog-page-container {
         margin: 40px 5%;
     }
-    .blog-page-image img {
-        height: auto;
-        width: 90%;
-        max-height: 800px;
-        max-width: 100%;
-        object-fit: cover;
+    .blog-page-content {
+        padding-right: 100px;
     }
 }
 
+
+@media (max-width: 600px) {
+    .blog-page-container {
+        margin: 40px 20px;
+        max-width: calc(100% - 40px);
+    }
+    .blog-page-content {
+        padding-right: 0px;
+    }
+}
 
 </style>
