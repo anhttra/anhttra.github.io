@@ -45,17 +45,12 @@ ghostAPI.posts.browse({
     /* background-color: #fff; */
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .bloglist-container {
+        margin: 0
         /* margin: auto; */
         /* max-width: 875px; */
         /* align-self: center; */
-    }
-}
-
-@media (max-width: 650px) {
-    .post-feed {
-        /* padding-top: 5vw; */
     }
 }
 

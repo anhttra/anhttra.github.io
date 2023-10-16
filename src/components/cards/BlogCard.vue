@@ -40,6 +40,7 @@ const timeAgo = computed(() => dayjs(props.published_at).fromNow())
     box-shadow: none;
 }
 } */
+
 .blog-card {
     display: flex;
     flex-direction: row;
@@ -75,7 +76,6 @@ const timeAgo = computed(() => dayjs(props.published_at).fromNow())
     /* padding-bottom: 30px; */
 }
 
-
 .blog-card-primary-tag {
     display: flex;
     gap: 10px;
@@ -95,7 +95,7 @@ const timeAgo = computed(() => dayjs(props.published_at).fromNow())
 
 
 .blog-card-title {
-    margin-top: 1.2em 0;
+    margin: 1.2em 0;
     /* font-size: 100%; */
     font-size: 1.5rem;
     color: #729176;
@@ -114,7 +114,32 @@ const timeAgo = computed(() => dayjs(props.published_at).fromNow())
     line-height: 20px;
     font-weight: 500;
     color: #909792;
-    /* padding-right: 30px; */
 }
+
+@media (max-width: 768px) {
+    .blog-card {
+        max-width: 80%;
+        flex-direction: column-reverse;
+    }
+    
+    .blog-card-content {
+        flex-basis: content;
+        padding-left: 0;
+    }
+    .blog-card-image {
+        flex-basis: content;
+    }
+    .blog-card-primary-tag {
+        margin-bottom: 0;
+    }
+    .blog-card-title {
+        margin: 0;
+    }
+    .blog-card-meta {
+        order: 10;
+        /* display: inline-block; */
+    }
+}
+
 
 </style>
