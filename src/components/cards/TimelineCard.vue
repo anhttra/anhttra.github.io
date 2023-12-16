@@ -66,7 +66,7 @@ const props = defineProps({
     width: 100%;
     /* max-width: 100px; */
     margin-left: 10px;
-    margin-top: -4px;
+    margin-top: -2px;
     /* background-color: #fff; */
 }
 .timeline-desc {
