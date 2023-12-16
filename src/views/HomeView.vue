@@ -16,6 +16,9 @@ import SimpleBanner from '../components/banners/SimpleBanner.vue'
       <ProfileCard></ProfileCard>
       <hr>
       <div class="timecard-container">
+        <TimelineCard startDate="12/23" endDate="now" iconSrc="spartan-logo.png">
+          Worked at Spartan Dev as Staff AI Engineer.
+        </TimelineCard>
         <TimelineCard startDate="09/20" endDate="06/23" iconSrc="/dsoft-logo.svg">
           I was the Head of THOR Lab at D-Soft JSC. I had developed core AI modules, especially Image Processing 
           and Video Analysis using Deep Learning for the company's products and customer's projects. 
