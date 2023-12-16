@@ -16,7 +16,7 @@ import SimpleBanner from '../components/banners/SimpleBanner.vue'
       <ProfileCard></ProfileCard>
       <hr>
       <div class="timecard-container">
-        <TimelineCard startDate="12/23" endDate="now" iconSrc="spartan-logo.png">
+        <TimelineCard startDate="12/23" endDate="now" iconSrc="/spartan-logo.png">
           Worked at Spartan Dev as Staff AI Engineer.
         </TimelineCard>
         <TimelineCard startDate="09/20" endDate="06/23" iconSrc="/dsoft-logo.svg">
