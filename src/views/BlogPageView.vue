@@ -12,12 +12,13 @@ const ghostAPI = currentApp.appContext.config.globalProperties.ghostAPI;
 
 const slug = route.params.slug;
 ghostAPI.posts
-  .browse({
+  .read({
     slug: slug,
     include: "tags",
   })
   .then((response) => {
-    Object.assign(post, response[0]);
+    Object.assign(post, response);
+    console.log(response);
     isLoading.value = false;
   });
 const publicDate = computed(() =>

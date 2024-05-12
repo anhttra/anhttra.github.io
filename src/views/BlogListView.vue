@@ -15,7 +15,6 @@ ghostAPI.posts
   .then((response) => {
     Object.assign(posts, response);
     isLoading.value = false;
-    // console.log(response);
   });
 </script>
 
