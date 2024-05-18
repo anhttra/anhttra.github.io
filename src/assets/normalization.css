@@ -8,8 +8,8 @@ body {
   vertical-align: baseline;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(19,21,19,1);
-  color: rgba(246,247,249,1);
+  background-color: rgba(19, 21, 19, 1);
+  color: rgba(246, 247, 249, 1);
   /* overflow: hidden; */
 }
 
@@ -39,7 +39,7 @@ body {
 
 ol,
 ul {
-  list-style: none;
+  /* list-style: none; */
 }
 
 blockquote,
@@ -51,7 +51,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -60,15 +60,15 @@ table {
   border-spacing: 0;
 }
 
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration,
-input[type=search]::-webkit-search-results-button,
-input[type=search]::-webkit-search-results-decoration {
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-input[type=search] {
+input[type="search"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-box-sizing: content-box;
@@ -358,7 +358,6 @@ select,
 textarea {
   color: #222;
 }
-
 
 ::-moz-selection {
   background: #b3d4fc;
