@@ -1,3 +1,9 @@
+# By anhtt
+*.backup
+.docusaurus/
+*.old
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -9,7 +15,6 @@ node_modules/
 
 # Distribution / packaging
 .Python
-build/
 develop-eggs/
 dist/
 downloads/
