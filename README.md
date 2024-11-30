@@ -3,8 +3,8 @@
 ## TODO:
 
 - [x] Init project using docusaurus (ts)
-- [ ] Add tailwindcss
-- [ ] ????
+- [x] Add tailwindcss
+- [x] Move stuffs from old blog site
 
 <mark>Just a personal site of mine.</mark>
 
